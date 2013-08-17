@@ -1,0 +1,23 @@
+{
+    "name": "adamgoose/saasframe",
+    "description": "",
+    "authors": [
+        {
+            "name": "Adam Engebretson",
+            "email": "adam@enge.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Adamgoose\\Saasframe": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
