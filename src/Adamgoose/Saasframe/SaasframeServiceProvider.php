@@ -1,6 +1,7 @@
 <?php namespace Adamgoose\Saasframe;
 
 use Illuminate\Support\ServiceProvider;
+use Config;
 
 class SaasframeServiceProvider extends ServiceProvider {
 
@@ -19,6 +20,10 @@ class SaasframeServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('adamgoose/saasframe');
+
+		include __DIR__.'/routes.php';
+
+		\Stripe::setApiKey(Config::get('saasframe::stripe.secret'));
 	}
 
 	/**

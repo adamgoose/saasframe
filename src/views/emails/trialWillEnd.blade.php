@@ -1,0 +1,1 @@
+This is an email letting you know that your trial is about to end.
