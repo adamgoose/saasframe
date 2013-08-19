@@ -145,7 +145,7 @@ class WebhookController extends Controller
     $customer = Stripe_Customer::retrieve($this->event->customer);
     $user = Sentry::getUserProvider()->findByLogin($customer->email);
     $subscription = $this->event;
-    $mailMethod = Config::get('saasframe.email.method');
+    $mailMethod = Config::get('saasframe::email.method');
 
     Mail::{$mailMethod}(Config::get('saasframe::email.view'), (array)$subscription, function($message) use ($user)
     {

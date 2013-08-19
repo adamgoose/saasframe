@@ -4,6 +4,8 @@ return array(
 
   'route' => 'saasframe',
 
+  'webhook_controller' => 'Adamgoose\Saasframe\Controllers\WebhookController',
+
   'stripe' => array(
 
     'secret' => 'sk_test_5fmOjL2x9phXmyeXAn3Ac7S1',
