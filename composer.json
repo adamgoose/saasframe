@@ -2,7 +2,7 @@
     "name": "adamgoose/saasframe",
     "description": "A Bootstrap for Subscription-Based SaaS Written in Laravel",
     "keywords": ["laravel","sentry","stripe","saas"],
-    "homepage": "https://github.com/orchdork10159/saasframe",
+    "homepage": "https://github.com/adamgoose/saasframe",
     "license": "MIT",
     "authors": [
         {

@@ -1,6 +1,6 @@
 # Saas Frame
 
-[![Build Status](https://travis-ci.org/orchdork10159/saasframe.png?branch=master)](https://travis-ci.org/orchdork10159/saasframe)
+[![Build Status](https://travis-ci.org/adamgoose/saasframe.png?branch=master)](https://travis-ci.org/orchdork10159/saasframe)
 
 Saas Frame (saasframe) is a bootstrapped SaaS that manages the interaction between your application and Stripe's payment gateway.
 
@@ -34,7 +34,7 @@ You'll also need to add some information to your `/app/config/app.php` file. Sim
 
 You'll also want to be able to access Sentry's class through the Class Alias feature of Laravel. Add the following line to the `aliases` array.
 
-    'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+    'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 
 Now, we just need to make sure that everything's configured properly.
 
@@ -42,7 +42,9 @@ Now, we just need to make sure that everything's configured properly.
 
 You can configure Sentry however you'd like. Head over to [the Sentry documetation](http://docs.cartalyst.com/sentry-2) for more information. Here, we'll just discuss what's available for you to configure in Saas Frame.
 
-The `route` option lets you decide where you would like the automation of Saas Frame to occur. This is where you will point your Stripe webhooks. For example, if the `route` configuration is set to 'saasframe', you should point your Stripe webhooks to 'http://yourdomain.com/saasframe'. 
+The `route` option lets you decide where you would like the automation of Saas Frame to occur. This is where you will point your Stripe webhooks. For example, if the `route` configuration is set to 'saasframe', you should point your Stripe webhooks to 'http://yourdomain.com/saasframe'.
+
+> Keep in mind that Stripe requires the https:// protocol for production webhooks. However, http:// is just fine for development.
 
 You'll also need to give Saas Frame your Stripe API keys. If you don't know where to get these, head over to [the Stripe Documetation](https://stripe.com/docs/tutorials/dashboard#api-keys) for more information.
 
