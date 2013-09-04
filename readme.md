@@ -18,7 +18,7 @@ Next, we will configure some of the dependencies. Saas Frame integrates with [Se
 
 Next, we'll make some modifications to Sentry's migrations.
 
-    php artisan migrate --package=adamgoose/sentry
+    php artisan migrate --package=adamgoose/saasframe
 
 It'll also be important for you to take a look at some of the configuration options provided by both Sentry and Saas Frame.
 
