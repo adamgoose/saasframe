@@ -1,3 +1,5 @@
+> *NOTE:* This package is dead... Instead, check out Laravel's Cashier package at [https://github.com/laravel/cashier](https://github.com/laravel/cashier)
+
 # Saas Frame
 
 [![Build Status](https://travis-ci.org/adamgoose/saasframe.png?branch=master)](https://travis-ci.org/orchdork10159/saasframe)
